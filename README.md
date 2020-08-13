@@ -1,6 +1,6 @@
 # Mod-3-Project
 
-* Blogging App *
+*Blogging App*
 
     Blogging app that allows a user to:
         - post a New blog
