@@ -2,7 +2,7 @@
 
 * Blogging App
 
-    Blogging app that allows a single user to:
+    Blogging app that allows a user to:
         - post a New blog
         - Edit a blog blog
         - Delete a blog
@@ -16,30 +16,31 @@
             - View Posts
             - Like Posts
 
-        * User avatr with some sort of settings or preferences 
+        * User avatar with some sort of settings or preferences 
         * Framework integration for styling (bootstrap?)
         * Font Awesome or something similiar for buttons/icons, etc.
+        * Project will be live on AWS and accessible
 
 
 
         Strech goals:
             - Comments
 
+        Model:
+            User---<Post>---PostLike---<Like
 
-        User---<Post>---PostLike---<Like
+            User:
+                -Name
+                -email
 
-        User:
-            -Name
-            -email
-
-        Post:
-            -Name
-            -Date
-            -Content
+            Post:
+                -Name
+                -Date
+                -Content
         
-        PostLike:
-            -PostID
-            -LikeID
+            PostLike:
+                -PostID
+                -LikeID
 
-        Like:
-            -User associated with like?
+            Like:
+                -User associated with like?
